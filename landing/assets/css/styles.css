@@ -142,7 +142,7 @@ body:not(.dark) .social-icon {
 	text-decoration: none;
 	color: inherit;
 	font-size: 1rem;
-	transition: transform 0.2s, background-color 0.3s, border-color 0.3s;
+	transition: transform 0.2s, background-color 0.3s, border-color 0.3s, filter 0.3s ease;
 }
 
 body.dark .link-card {
@@ -190,11 +190,6 @@ body.dark .link-card {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	transition: transform 0.2s;
-}
-
-.copy-btn:hover {
-	transform: scale(1.1);
 }
 
 body.dark .copy-btn {
@@ -206,7 +201,8 @@ body:not(.dark) .copy-btn {
 }
 
 .link-card:hover {
-	transform: scale(1.05);
+	transform: scale(1.02);
+	filter: brightness(0.9);
 }
 
 footer {
