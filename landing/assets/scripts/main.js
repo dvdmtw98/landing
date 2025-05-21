@@ -32,7 +32,7 @@ const copySiteLink = () => {
                 if (linkCard) {
                     const url = linkCard.getAttribute('href');
                     if (url) {
-                        navigator.clipboard.writeText(url);
+                        navigator.clipboard.writeText(url.replace('mailto:', ''));
                         createCheckMark();
                     } else {
                         console.error('No URL found to copy');
